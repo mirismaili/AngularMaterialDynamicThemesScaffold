@@ -80,7 +80,7 @@
       "commands": [
         "cd backend",
         "npm install",
-        "export NODE_ENV=production && npm run compile"
+        "export NODE_ENV=production && npm run prod"
       ]
     }
   }
