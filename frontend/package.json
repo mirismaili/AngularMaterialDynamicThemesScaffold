@@ -4,8 +4,8 @@
   "description": "A simple Angular scaffold",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build --prod --deleteOutputPath=false",
+    "start": "NODE_ENV=development ng serve",
+    "build": "NODE_ENV=production ng build --prod --deleteOutputPath=false",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
