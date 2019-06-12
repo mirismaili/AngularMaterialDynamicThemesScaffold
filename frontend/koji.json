@@ -1,7 +1,7 @@
 {
 	"pages": [{
 		"name": "App",
-        "route": "/",
+        "route": "/src/",
         "path": "frontend"
 	}]
 }
