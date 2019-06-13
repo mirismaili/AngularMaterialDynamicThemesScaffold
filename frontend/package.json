@@ -4,7 +4,7 @@
   "description": "A simple Angular scaffold",
   "scripts": {
     "ng": "ng",
-    "start": "NODE_ENV=development ng serve --host 0.0.0.0 --port 4200 --disableHostCheck",
+    "start": "cross-env NODE_ENV=development ng serve --host 0.0.0.0 --port 4200 --disableHostCheck",
     "build": "cross-env NODE_ENV=production ng build --prod --deleteOutputPath=false",
     "test": "ng test",
     "lint": "ng lint",
