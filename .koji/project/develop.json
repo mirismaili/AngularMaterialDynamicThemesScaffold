@@ -14,7 +14,7 @@
     "backend": {
         "path": "backend",
         "port": 3000,
-        "startCommand": "npm start:watch",
+        "startCommand": "npm run start:watch",
         "events": {
             "started": "[koji] backend started",
             "log": "[koji-log]"
