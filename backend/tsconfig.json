@@ -10,7 +10,7 @@
       "esnext"
     ],
     "outDir": "./dist",
-    "baseUrl": ".",
+    "baseUrl": "./",
     "alwaysStrict": true,
     "typeRoots": [
       "node_modules/@types",
@@ -19,7 +19,7 @@
   },
   "include": [
     "routes/**/*.ts",
-    "src/**/*.ts",
+    "interfaces/**/*.ts",
     "index.ts"
   ],
   "exclude": [

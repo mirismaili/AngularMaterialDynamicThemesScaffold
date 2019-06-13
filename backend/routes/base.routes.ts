@@ -20,6 +20,6 @@ export class BaseRoutes {
     };
 
     // apply cors in all requests
-    this.router.all('*', cors(corsOptions));
+    this.router.use('*', cors(corsOptions));
   }
 }

@@ -1,0 +1,11 @@
+  {
+    "watch": [
+      "routes/*",
+      "interfaces/*",
+      "../.koji/*"
+    ],
+    "ext": "ts, json, js",
+    "ignore": [
+      "node_modules"
+    ]
+  }
