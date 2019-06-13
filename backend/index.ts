@@ -2,7 +2,9 @@
 import * as bodyParser from 'body-parser';
 import * as express from 'express';
 // routes
-import { serverRoutes } from './routes/index';
+import { serverRoutes } from './routes';
+// interfaces
+import { AddressInfo } from './interfaces';
 
 
 // create a server
@@ -17,6 +19,8 @@ server.use(bodyParser.urlencoded({ limit: '2mb', extended: true }));
 server.use('/', serverRoutes);
 
 // initialize the server
-server.listen(process.env.PORT || 3000, () => {
+const serverRunning = server.listen(process.env.PORT || 3000, () => {
+  const addressInfo = serverRunning.address() as AddressInfo;
   console.log('Express server listening');
+  console.log('Express server addressInfo: ', addressInfo);
 });

@@ -4,7 +4,7 @@ import * as fs from 'fs';
 // routes
 import { BaseRoutes } from '../routes/base.routes'; // don't import from barrel
 // interfaces
-import { IkojiRoutesParams } from '../src/interfaces/index';
+import { IkojiRoutesParams } from '../interfaces';
 
 class ServerRoutes extends BaseRoutes {
   constructor() {
