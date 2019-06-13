@@ -13,8 +13,8 @@
     },
     "backend": {
         "path": "backend",
-        "port": 3333,
-        "startCommand": "npm dev",
+        "port": 3000,
+        "startCommand": "npm start",
         "events": {
             "started": "[koji] backend started",
             "log": "[koji-log]"
