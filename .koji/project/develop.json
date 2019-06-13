@@ -2,19 +2,19 @@
   "develop": {
     "frontend": {
       "path": "frontend",
-      "port": 8080,
+      "port": 4200,
       "events": {
         "started": "[webpack] Frontend server started",
         "building": "[webpack] Frontend building",
         "built": "Compiled successfully.",
         "build-error": "[webpack] Frontend build error"
       },
-      "startCommand": "npm run start"
+      "startCommand": "npm start"
     },
     "backend": {
         "path": "backend",
         "port": 3333,
-        "startCommand": "npm run dev",
+        "startCommand": "npm dev",
         "events": {
             "started": "[koji] backend started",
             "log": "[koji-log]"

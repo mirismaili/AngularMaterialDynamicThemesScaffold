@@ -2,6 +2,6 @@
 	"pages": [{
 		"name": "App",
         "route": "/",
-        "path": "frontend/src"
+        "path": "frontend/src/"
 	}]
 }
