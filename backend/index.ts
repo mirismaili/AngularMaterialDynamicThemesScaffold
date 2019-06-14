@@ -21,6 +21,5 @@ server.use('/', serverRoutes);
 // initialize the server
 const serverRunning = server.listen(process.env.PORT || 3000, () => {
   const addressInfo = serverRunning.address() as AddressInfo;
-  console.log('Express server listening');
-  console.log('Express server addressInfo: ', addressInfo);
+  console.log('Express server listening: ', addressInfo);
 });
