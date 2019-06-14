@@ -1,0 +1,32 @@
+
+:host {
+  display: block;
+  height: 100%;
+  position: relative;
+
+  &:before {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &-logo {
+      margin: 20px 0;
+      max-width: 300px;
+    }
+
+    &-links {
+      list-style: none;
+      padding: 0;
+    }
+  }
+}
