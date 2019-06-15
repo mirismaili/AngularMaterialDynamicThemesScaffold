@@ -6,20 +6,22 @@
 ### A starting point to build a project using Angular 8 in the frontend and TypeScript in the backend
 
 ## Features:
-- Angular 8 with new engine [Ivy](https://blog.angularindepth.com/all-you-need-to-know-about-ivy-the-new-angular-engine-9cde471f42cf) enabled
+- Angular 8 with new engine [IVY](https://blog.angularindepth.com/all-you-need-to-know-about-ivy-the-new-angular-engine-9cde471f42cf) enabled
 - A complete Angular CLI project in the frontend
 - A backend built in TypeScript with a simple API included
 - CORS enabled by default
-- A proxy for api requests to the backend
+- A frontend proxy for API requests
 - Some examples added (pages, services, interfaces, etc...)
+- Front & Back hot reload 
 
 ## Todo:
-- Integrate Koji 'Customizations' with the app
+- Add and integrate Koji 'Customizations'
 - Set metadata to frontend pages & link them to Koji customizations
 - Enable/disable CORS by using Koji customizations
 - Add security to the frontend & backend
 - Extend Webpack builds using the new Angular customs builders 
 - PWA compatibility
+- Add flex layout (Flexbox CSS + mediaQuery)
 
 ## Getting Started
 Make sure you have installed all npm packages needed in order to run the app. Otherwise, run a `npm i` in terminal in every folder (frontend/backend)
