@@ -1,0 +1,31 @@
+:host {
+  .header {
+    align-items: center;
+    display: flex;
+    height: 50px;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+
+    .header-link {
+      background-color: transparent;
+      padding: 10px;
+      border-radius: 0.25rem;
+      text-decoration: none;
+      transition: background-color 0.2s linear, color 0.2s linear;
+
+      &:active {
+        color: inherit;
+      }
+
+      &:hover {
+        background-color: #ddd;
+        transition: background-color 0s linear;
+      }
+
+      &.active {
+        color: white;
+        background-color: dodgerblue;
+      }
+    }
+  }
+}
