@@ -36,7 +36,7 @@ v1.0 - Initial release
 Make sure you have installed all npm packages needed in order to run the app. Otherwise, run a `npm i` in terminal in every folder (frontend/backend).
 
 - App entry point template [here](#~/frontend/src/app/app.component.ts)
-- App general config [here](#~/frontend/src/config/app.ts)
+- App general config [here](#~/frontend/src/app/config/app.ts)
 - App routes [here](#~/frontend/src/app/app-routing.module.ts)
 
 - Server entry point [here](#~/backend/index.ts)
