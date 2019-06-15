@@ -2,22 +2,13 @@
 :host {
   display: block;
   height: 100%;
-  position: relative;
-
-  &:before {
-    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
-    content: "";
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-  }
 
   .main {
     align-items: center;
     display: flex;
     flex-direction: column;
     font-size: 75%;
+    margin-top: 20px;
     position: relative;
 
     &-logo {

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  title = 'Angular 8 + TypeScript Scaffold';
+  title = 'Angular 8 + TypeScript';
 
   constructor() { }
 
