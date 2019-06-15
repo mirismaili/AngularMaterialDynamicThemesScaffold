@@ -8,18 +8,15 @@ import * as express from 'express';
 export class BaseRoutes {
   public router: express.Router = express.Router();
 
-  constructor() {
-    console.log('BaseRoutes init');
-    //  options for cors midddleware
-    const corsOptions: cors.CorsOptions = {
-      allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Authorization', 'X-Jiro-Request-Tag'],
-      origin: '*',
-      methods: 'GET,POST,PUT,DELETE',
-      // credentials: true,
-      // preflightContinue: true,
-    };
+  // allowed origins for CORS validation
+  private allowedOrigins = ['http://localhost:4200'];
+  // CORS options
+  private corsOptions: cors.CorsOptions;
 
-    // apply cors in all requests
-    this.router.use('*', cors(corsOptions));
+  constructor(enableCors: boolean) {
+    if (enableCors) {
+      // @TODO: set cors options regarding app configuration
+      this.router.use('*', cors(this.corsOptions));
+    }
   }
 }
