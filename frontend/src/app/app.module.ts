@@ -1,18 +1,32 @@
+// core
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
+import { NgModule, LOCALE_ID } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+// routes
 import { AppRoutingModule } from './app-routing.module';
+// services
+import { SampleService } from './services';
+// components
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './components';
+// pages
+import { HomeComponent } from './pages';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    AppRoutingModule,
   ],
-  providers: [],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'en-Us' }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
