@@ -5,28 +5,42 @@
 
 ### A starting point to build a project using Angular 8 in the frontend and TypeScript in the backend
 
+Changelog
+
+v1.0 - Initial release
+
+
 ## Features:
-- Angular 8 with new engine [IVY](https://blog.angularindepth.com/all-you-need-to-know-about-ivy-the-new-angular-engine-9cde471f42cf) enabled
-- A complete Angular CLI project in the frontend
-- A backend built in TypeScript with a simple API included
-- CORS enabled by default
-- A frontend proxy for API requests
-- Some examples added (pages, services, interfaces, etc...)
-- Front & Back hot reload 
+- Frontend:
+  - Angular 8 with the new engine [IVY](https://blog.angularindepth.com/all-you-need-to-know-about-ivy-the-new-angular-engine-9cde471f42cf) enabled
+  - CLI commands available in terminal
+  - A proxy for API requests
+  - Lazy Load modules
+  - Hot reloading
+  - Some examples included (pages, services, interfaces, etc...)
+- Backend:
+  - Built in TypeScript
+  - A simple API REST included
+  - CORS enabled by default
+  - Hot reloading
 
 ## Todo:
-- Add and integrate Koji 'Customizations'
-- Set metadata to frontend pages & link them to Koji customizations
-- Enable/disable CORS by using Koji customizations
+- Add and integrate Koji 'Customizations' (metadata, options, etc)
 - Add security to the frontend & backend
 - Extend Webpack builds using the new Angular customs builders 
 - PWA compatibility
 - Add flex layout (Flexbox CSS + mediaQuery)
+- Add reset CSS rules
 
 ## Getting Started
-Make sure you have installed all npm packages needed in order to run the app. Otherwise, run a `npm i` in terminal in every folder (frontend/backend)
+Make sure you have installed all npm packages needed in order to run the app. Otherwise, run a `npm i` in terminal in every folder (frontend/backend).
 
-- Angular entry point template [here](#~/frontend/src/app/app.component.ts).
+- App entry point template [here](#~/frontend/src/app/app.component.ts)
+- App general config [here](#~/frontend/src/config/app.ts)
+- App routes [here](#~/frontend/src/app/app-routing.module.ts)
+
+- Server entry point [here](#~/backend/index.ts)
+- Server routes [here](#~/backend/routes/server.routes.ts)
 
 ## Support and suggestions
 Please feel free to [contact me](https://gokoji.com/profile/gtrdev) if you have any suggestions!   
