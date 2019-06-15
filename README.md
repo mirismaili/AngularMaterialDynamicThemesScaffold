@@ -1,4 +1,4 @@
-![Banner image](frontend\src\assets\images\angular8-typescript-scaffold-logo.png)
+![Banner image](https://cdn1.imggmi.com/uploads/2019/6/15/31fa5a47f8863614af591c03dc768ba4-full.png)
 
 
 # Angular 8 + TypeScript Scaffold
@@ -8,7 +8,7 @@
 ## Features:
 - Angular 8 with new engine [Ivy](https://blog.angularindepth.com/all-you-need-to-know-about-ivy-the-new-angular-engine-9cde471f42cf) enabled
 - A complete Angular CLI project in the frontend
-- A backend built in TypeScript with a simple API set
+- A backend built in TypeScript with a simple API included
 - CORS enabled by default
 - A proxy for api requests to the backend
 - Some examples added (pages, services, interfaces, etc...)

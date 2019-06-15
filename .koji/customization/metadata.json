@@ -1,12 +1,12 @@
 {
   "metadata": {
     "name": "Angular 8 + TypeScript Scaffold",
-    "short_name": "NG 8 + TS App",
+    "short_name": "Angular+TS",
     "description": "An Angular 8 scaffold with a TypeScript backend. Easily customizable at gokoji.com.",
-    "image": "https://images.koji-cdn.com/025a4ca3-2c61-4cf2-b821-55b7023c47dc/kojireact.png",
-    "icon": "https://objects.koji-cdn.com/025a4ca3-2c61-4cf2-b821-55b7023c47dc/94e432a7-951b-4b41-a726-d5d9fc66c533.ico",
-    "icon192": "",
-    "icon512": "",
+    "image": "https://images.koji-cdn.com/d2a7a9d4-7373-4d11-8310-92a8d0394128/angular8typescriptscaffoldlogo.png",
+    "icon": "https://images.koji-cdn.com/d2a7a9d4-7373-4d11-8310-92a8d0394128/angular8typescriptscaffoldlogo.png",
+    "icon192": "https://images.koji-cdn.com/d2a7a9d4-7373-4d11-8310-92a8d0394128/angular8typescriptscaffoldlogo.png",
+    "icon512": "https://images.koji-cdn.com/d2a7a9d4-7373-4d11-8310-92a8d0394128/angular8typescriptscaffoldlogo.png",
     "gaCode": ""
   },
   "@@editor": [
