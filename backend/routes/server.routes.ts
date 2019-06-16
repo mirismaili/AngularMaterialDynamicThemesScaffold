@@ -9,8 +9,7 @@ import { IkojiRoutesParams } from '../interfaces';
 
 class ServerRoutes extends BaseRoutes {
   constructor() {
-    // enable/disable CORS
-    super(true);
+    super();
     this.setRoutes();
   }
 
