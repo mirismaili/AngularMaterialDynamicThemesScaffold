@@ -2,7 +2,7 @@
   "routes": [{
     "name": "sample",
     "path": "backend/routes/sample",
-    "route": "/sample",
+    "route": "/api/sample",
     "method": "GET",
     "isProtected": false
   }]

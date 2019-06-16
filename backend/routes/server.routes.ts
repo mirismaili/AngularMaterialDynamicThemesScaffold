@@ -85,7 +85,7 @@ class ServerRoutes extends BaseRoutes {
   private processRequest(routeName: string, isProtected: boolean, req: Request, res:Response): void {
     // init koji console
     this.kojiConsole(req);
-
+    
     // get the controller for this route (omit file extension for dev/prod compatibility .ts|.js)
     import(`./${routeName}/index`)
       .then(({defaultController}) => defaultController.init(req, res))

@@ -16,7 +16,7 @@ server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ limit: '2mb', extended: true }));
 
 // Routing
-server.use('/api', serverRoutes);
+server.use('/', serverRoutes);
 
 // initialize the server
 const serverRunning = server.listen(process.env.PORT || 3000, () => {
