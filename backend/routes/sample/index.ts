@@ -1,5 +1,5 @@
 /**
- * routes/sample/index.js
+ * routes/sample/index.ts
  *
  * What it does:
  *   Just an example of a route in koji with a corresponding koji.json
@@ -16,9 +16,7 @@ import { Request, Response } from 'express';
 
 
 class DefaultController {
-
   public init(req: Request, res: Response) {
-    console.log('DefaultController init');
     res.status(200).send({
       message: 'Hello World!',
     });
