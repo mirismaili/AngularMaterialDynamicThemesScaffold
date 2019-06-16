@@ -6,6 +6,7 @@ import { BaseRoutes } from '../routes/base.routes'; // don't import from barrel
 // interfaces
 import { IkojiRoutesParams } from '../interfaces';
 
+
 class ServerRoutes extends BaseRoutes {
   constructor() {
     // enable/disable CORS
@@ -85,14 +86,16 @@ class ServerRoutes extends BaseRoutes {
     // init koji console
     this.kojiConsole(req);
 
-    try {
-      // get controller
-      const { defaultController } = require(`../routes/${routeName}/index.ts`);
-      // initialize it
-      defaultController.init(req, res);
-    } catch (err) {
-      console.log('[koji-error]', err);
-    }
+    // get the controller for this route (omit file extension for dev/prod compatibility .ts|.js)
+    import(`./${routeName}/index`)
+      .then(({defaultController}) => defaultController.init(req, res))
+      .catch((error) => {
+        console.log('Error importing Controller file: ', error);
+
+        res.status(404).send({
+          message: 'Resource not found',
+        });
+      });
   }
 
   /**
@@ -107,7 +110,6 @@ class ServerRoutes extends BaseRoutes {
 
     // console overload for debugging
     const requestTag = req.headers['x-jiro-request-tag'];
-    console.log('processRequest requestTag: ', requestTag);
     if (!requestTag) {
       console.log = __originalConsole;
     } else {
