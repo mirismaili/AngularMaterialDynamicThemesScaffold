@@ -41,4 +41,3 @@ v1.0 - Initial release
 
 ## Support and suggestions
 Please feel free to [contact me](https://gokoji.com/profile/gtrdev) if you have any suggestions!   
-
