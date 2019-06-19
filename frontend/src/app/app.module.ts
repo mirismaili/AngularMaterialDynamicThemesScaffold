@@ -4,8 +4,6 @@ import { NgModule, LOCALE_ID } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 // routes
 import { AppRoutingModule } from './app-routing.module';
-// services
-import { SampleService } from './services';
 // components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components';
