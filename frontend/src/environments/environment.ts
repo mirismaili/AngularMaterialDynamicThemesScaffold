@@ -9,6 +9,7 @@ export const environment = {
   app_api_service_url: 'http://localhost:3000',
   app_google_analytics_id: '',
   app_cookie_domain: '',
+  process: process as NodeJS.Process,
 };
 
 /*
