@@ -85,7 +85,6 @@
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
             "browserTarget": "frontend:build",
-            "proxyConfig": "proxy.config.js",
             "customWebpackConfig": {
               "path": "./.internals/webpack.config.prod.js"
             }

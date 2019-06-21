@@ -2,14 +2,18 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+console.log('FRONTEND_URL: ', FRONTEND_URL);
+console.log('FRONTEND_PORT: ', FRONTEND_PORT);
+console.log('BACKEND_URL: ', BACKEND_URL);
+console.log('BACKEND_PORT: ', BACKEND_PORT);
+
 export const environment = {
   production: false,
   koji_environment: true,
-  app_base_url: 'http://0.0.0.0:4200',
-  app_api_service_url: 'http://localhost:3000',
+  app_base_url: FRONTEND_URL,
+  app_api_service_url: BACKEND_URL,
   app_google_analytics_id: '',
   app_cookie_domain: '',
-  process: process as NodeJS.Process,
 };
 
 /*
