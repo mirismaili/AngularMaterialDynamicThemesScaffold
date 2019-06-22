@@ -1,10 +1,9 @@
 {
   "name": "angular-scaffold",
   "version": "1.0.0",
-  "description": "A simple Angular scaffold",
+  "description": "An Angular 8 IVY scaffold",
   "scripts": {
     "ng": "ng",
-    "prestart": "koji-tools watch &",
     "start": "cross-env NODE_ENV=development ng serve --host 0.0.0.0 --port 4200 --disableHostCheck=true",
     "build": "cross-env NODE_ENV=production ng build --prod --deleteOutputPath=false",
     "test": "ng test",
@@ -12,7 +11,7 @@
     "e2e": "ng e2e"
   },
   "engines": {
-    "node": ">=10.16 < 12.0"
+    "node": ">=10.16 <= 12.0"
   },
   "private": true,
   "dependencies": {
