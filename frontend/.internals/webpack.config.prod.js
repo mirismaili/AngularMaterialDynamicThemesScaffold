@@ -1,8 +1,8 @@
 const webpack = require('webpack');
 
 // change these values for your domains
-const PRODUCTION_BACKEND_URL = 'https://localhost:3000';
-const PRODUCTION_FRONTEND_URL = 'https://localhost:4200';
+const PRODUCTION_BACKEND_URL = 'http://localhost:3000';
+const PRODUCTION_FRONTEND_URL = 'http://localhost:4200';
 
 module.exports = {
   plugins: [
