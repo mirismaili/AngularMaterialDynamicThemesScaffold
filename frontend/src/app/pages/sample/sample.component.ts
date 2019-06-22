@@ -1,10 +1,8 @@
 // core
 import { Component } from '@angular/core';
 // rxjs
-import { Observable, of, throwError } from 'rxjs';
-import { map, catchError } from 'rxjs/operators';
-// config
-import { APP } from '../../config';
+import { throwError } from 'rxjs';
+import { catchError } from 'rxjs/operators';
 // services
 import { SampleService } from '../../services';
 
@@ -14,13 +12,13 @@ import { SampleService } from '../../services';
   styleUrls: ['./sample.component.scss']
 })
 export class SampleComponent {
-  // message from server
+  // message from api
   message: string;
 
   constructor(private sampleService: SampleService) { }
 
   /**
-   * Requests a message from server
+   * Requests a message from api
    * @returns void
    */
   getMessageFromServer(): void {
