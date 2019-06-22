@@ -4,6 +4,8 @@ import { NgModule, LOCALE_ID } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 // routes
 import { AppRoutingModule } from './app-routing.module';
+// services
+import { KojiService } from './services';
 // components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components';
@@ -23,6 +25,7 @@ import { HomeComponent } from './pages';
     AppRoutingModule,
   ],
   providers: [
+    KojiService,
     { provide: LOCALE_ID, useValue: 'en-Us' }
   ],
   bootstrap: [AppComponent]
