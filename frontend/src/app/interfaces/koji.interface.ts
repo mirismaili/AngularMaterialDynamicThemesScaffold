@@ -1,16 +1,16 @@
 // @@editor
 export interface IKojiConfigEditor {
-  key?: string;
-  name?: string;
+  key: string;
   icon?: string;
-  source?: string;
+  name: string;
+  source: string;
   fields?: IKojiConfigEditorField[];
   [key: string]: any;
 }
 export interface IKojiConfigEditorField {
-  key?: string;
-  name?: string;
-  description?: string;
+  key: string;
+  name: string;
+  description: string;
   type?: string;
   typeOptions?: object | any;
   [key: string]: any;
@@ -23,29 +23,29 @@ export interface IKojiConfigBackend {
 
 // deploy (rules)
 export interface IKojiConfigDeploy {
-  backend?: IKojiConfigDeployParams;
-  frontend?: IKojiConfigDeployParams;
-  subdomain?: string;
+  backend: IKojiConfigDeployParams;
+  frontend: IKojiConfigDeployParams;
+  subdomain: string;
   [key: string]: any;
 }
 export interface IKojiConfigDeployParams {
-  commands?: string[];
+  commands: string[];
   injections?: any[];
-  output?: string;
+  output: string;
   [key: string]: any;
 }
 
 // develop
 export interface IKojiConfigDevelop {
-  backend?: IKojiConfigDevelopParams;
-  frontend?: IKojiConfigDevelopParams;
+  backend: IKojiConfigDevelopParams;
+  frontend: IKojiConfigDevelopParams;
   [key: string]: any;
 }
 export interface IKojiConfigDevelopParams {
-  events?: object;
-  path?: string;
-  port?: number | string;
-  startCommand?: string;
+  events: object;
+  path: string;
+  port: number | string;
+  startCommand: string;
   [key: string]: any;
 }
 
@@ -62,19 +62,19 @@ export interface IKojiConfigMetadata {
 
 // pages
 export interface IKojiConfigPages {
-  name?: string;
-  route?: string;
-  path?: string;
+  name: string;
+  route: string;
+  path: string;
   [key: string]: any;
 }
 
 // routes (api endpoint relative routes)
 export interface IKojiConfigRoutes {
-  isProtected?: boolean;
-  method?: string;
-  name?: string;
-  path?: string;
-  route?: string;
+  isProtected: boolean;
+  method: string;
+  name: string;
+  path: string;
+  route: string;
   [key: string]: any;
 }
 
@@ -82,8 +82,8 @@ export interface IKojiConfigRoutes {
 export interface IKojiConfig {
   ['@@editor']?: IKojiConfigEditor;
   backend?: IKojiConfigBackend[];
-  deploy?: IKojiConfigDeploy;
-  develop?: IKojiConfigDevelop;
+  deploy: IKojiConfigDeploy;
+  develop: IKojiConfigDevelop;
   metadata?: IKojiConfigMetadata;
   pages?: IKojiConfigPages[];
   routes?: IKojiConfigRoutes[];
