@@ -62,6 +62,9 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
+              "customWebpackConfig": {
+                "path": "./.internals/webpack.config.prod.js"
+              },
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -86,7 +89,7 @@
           "options": {
             "browserTarget": "frontend:build",
             "customWebpackConfig": {
-              "path": "./.internals/webpack.config.prod.js"
+              "path": "./.internals/webpack.config.dev.js"
             }
           },
           "configurations": {
