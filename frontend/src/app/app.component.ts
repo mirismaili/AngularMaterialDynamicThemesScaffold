@@ -13,10 +13,5 @@ export class AppComponent {
 
   constructor() {
     Koji.pageLoad();
-    // tslint:disable-next-line:no-string-literal
-    window['Koji'] = Koji;
-    console.log('Koji.config: ', Koji.config);
-    console.log('global: ', global);
-    console.log('process: ', process);
   }
 }
