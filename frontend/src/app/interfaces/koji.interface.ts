@@ -57,6 +57,7 @@ export interface IKojiConfigMetadata {
   gaCode?: string;
   icon?: string;
   image?: string;
+  url?: string;
   [key: string]: any;
 }
 
