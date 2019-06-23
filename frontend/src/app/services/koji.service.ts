@@ -18,7 +18,14 @@ export class KojiService {
 
   constructor() {
     this.kojiConfig = Koji.config;
-    console.log('Koji Service config: ', Koji.config);
+  }
+
+  /**
+   * Gets all data from Koji config
+   * @returns: IKojiConfig
+   */
+  getConfig(): IKojiConfig {
+    return this.kojiConfig;
   }
 
   /**
