@@ -3,3 +3,19 @@
 html, body {
   height: 100%;
 }
+
+body {
+  background-color: var(--background);
+  margin: 0;
+}
+
+main {
+  height: inherit;
+  position: relative;
+
+  & > * {
+    position: absolute;
+    // height: 100%;
+    width: 100%;
+  }
+}

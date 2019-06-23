@@ -11,8 +11,15 @@ import { HomeComponent } from './pages';
 // routes (use lazy load when needed)
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: APP.paths.sample, loadChildren: () => import('./pages/sample/sample.module').then(({ SampleModule }) => SampleModule) },
-  { path: '**', loadChildren: () => import('./pages/notfound/notfound.module').then(({ NotfoundModule }) => NotfoundModule), data: { path: '/', pathName: 'Go back' } }
+  {
+    path: APP.paths.sample,
+    loadChildren: () => import('./pages/sample/sample.module').then(({ SampleModule }) => SampleModule)
+  },
+  {
+    path: '**',
+    loadChildren: () => import('./pages/notfound/notfound.module').then(({ NotfoundModule }) => NotfoundModule),
+    data: { path: '/', pathName: 'Go back' }
+  }
 ];
 
 @NgModule({
