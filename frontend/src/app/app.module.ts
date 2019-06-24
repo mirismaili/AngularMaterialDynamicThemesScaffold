@@ -9,7 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { KojiService } from './services';
 // components
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components';
+import { HeaderComponent, FooterComponent } from './components';
 // pages
 import { HomeComponent } from './pages';
 
@@ -18,7 +18,8 @@ import { HomeComponent } from './pages';
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
