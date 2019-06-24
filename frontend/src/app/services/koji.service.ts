@@ -37,18 +37,20 @@ export class KojiService {
   }
 
   /**
-   * Gets '@@Editor' data from Koji config
+   * Gets '@@Editor' or a property of it from Koji config
+   * @param property: String
    * @returns: IKojiConfigEditor
    */
-  getEditor(): IKojiConfigEditor {
-    return this.kojiConfig['@@editor'];
-  }
-
-  /**
-   * Gets 'metadata' data from Koji config
-   * @returns: IKojiConfigMetadata
-   */
-  getMetadata(): IKojiConfigMetadata {
-    return this.kojiConfig.metadata;
+  getEditor(property?: string): IKojiConfigEditor | any {
+    if (!property) {
+      return this.kojiConfig['@@editor'];
+    } else {
+      try {
+        return this.kojiConfig[property];
+      } catch (error) {
+        console.log('This property doesn\'t exists in the Editor');
+        return;
+      }
+    }
   }
 }
