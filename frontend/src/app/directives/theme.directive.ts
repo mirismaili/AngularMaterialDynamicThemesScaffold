@@ -44,11 +44,12 @@ export class ThemeDirective implements OnInit {
    */
   private addThemeStyles(): void {
     // get the theme content
-    const theme = this.kojiService.getEditor('general');
+    const theme = this.kojiService.getEditor('theme');
     const themeProps = Object.keys(theme);
 
     if (themeProps.length) {
-      let properties = '';
+      // css properties variables
+      let cssPropertiesVars = '';
 
       // check every theme property that starts with '--'
       themeProps.map((prop) => {
@@ -57,18 +58,18 @@ export class ThemeDirective implements OnInit {
           if (prop === '--font-family') {
             this.addFont(theme[prop]);
           }
-          // for properties that sets the background with an image
-          if (prop === '--background' && theme[prop].indexOf('http') > -1) {
+          // for properties that sets the background with an image (absolute path)
+          if (prop.startsWith('--background') && theme[prop].indexOf('http') > -1) {
             theme[prop] = (`url(${theme[prop]})`).toString();
           }
           // add the style
-          properties += `${prop}: ${theme[prop]};`;
+          cssPropertiesVars += `${prop}: ${theme[prop]};`;
         }
       });
 
-      if (properties !== '') {
+      if (cssPropertiesVars !== '') {
         // set the css variables to the DOM
-        this.render.setProperty(this.document.documentElement, 'style', properties);
+        this.render.setProperty(this.document.documentElement, 'style', cssPropertiesVars);
       }
     }
   }
