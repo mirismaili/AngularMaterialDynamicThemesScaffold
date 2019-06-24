@@ -27,9 +27,9 @@ export class HomeComponent implements OnInit {
 
   init(): void {
     // sets page title
-    this.titleService.setTitle(this.kojiService.getMetadata().name);
+    this.titleService.setTitle(this.kojiService.getEditor('metadata').name || APP.defaults.metatags.title);
     // sets page metatags
-    this.setMetaTags(this.kojiService.getMetadata());
+    this.setMetaTags(this.kojiService.getEditor('metadata'));
   }
 
   /**
