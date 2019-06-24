@@ -1,5 +1,9 @@
 
 :host {
+  background: var(--background);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: block;
 
   .main {

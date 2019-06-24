@@ -5,7 +5,8 @@ html, body {
 }
 
 body {
-  background-color: var(--background);
+  color: var(--text-color);
+  font-family: var(--font-family);
   margin: 0;
 }
 
@@ -14,8 +15,8 @@ main {
   position: relative;
 
   & > * {
+    height: inherit;
     position: absolute;
-    // height: 100%;
     width: 100%;
   }
 }

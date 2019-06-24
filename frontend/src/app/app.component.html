@@ -1,4 +1,7 @@
-<app-header></app-header>
-<main [@routeAnimations]="prepareRoute(outlet)">
-  <router-outlet appTheme #outlet="outlet"></router-outlet>
-</main>
+<div appTheme>
+  <app-header></app-header>
+  <main [@routeAnimations]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </main>
+  <app-footer></app-footer>
+</div>
