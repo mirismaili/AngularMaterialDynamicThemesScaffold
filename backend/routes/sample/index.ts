@@ -18,7 +18,7 @@ import { Request, Response } from 'express';
 class DefaultController {
   public init(req: Request, res: Response) {
     res.status(200).send({
-      message: 'Hello World!',
+      message: '🙋‍ Hello World!',
     });
   }
 }
