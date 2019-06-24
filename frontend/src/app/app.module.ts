@@ -7,6 +7,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 // services
 import { KojiService } from './services';
+// directives
+import { ThemeDirective } from './directives';
 // components
 import { AppComponent } from './app.component';
 import { HeaderComponent, FooterComponent } from './components';
@@ -20,6 +22,7 @@ import { HomeComponent } from './pages';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
+    ThemeDirective
   ],
   imports: [
     BrowserModule,
