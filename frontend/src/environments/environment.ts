@@ -2,11 +2,6 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-console.log('FRONTEND_URL: ', FRONTEND_URL);
-console.log('FRONTEND_PORT: ', FRONTEND_PORT);
-console.log('BACKEND_URL: ', BACKEND_URL);
-console.log('BACKEND_PORT: ', BACKEND_PORT);
-
 // FRONTEND_URL and BACKEND_URL are declared in 'types' folder / these vars are set in the webpack file in '.internals' folder
 export const environment = {
   production: false,
