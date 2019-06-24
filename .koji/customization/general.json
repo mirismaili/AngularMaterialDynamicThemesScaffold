@@ -2,7 +2,7 @@
   "general": {
     "name": "My new App using Angular 8 + TypeScript",
     "--font-family": "Nunito",
-    "--background": "https://images.koji-cdn.com/d2a7a9d4-7373-4d11-8310-92a8d0394128/background.jpg",
+    "--background": "https://images.koji-cdn.com/d2a7a9d4-7373-4d11-8310-92a8d0394128/backgroundnew.jpg",
     "--text-color": "#0F0F0F"
   },
   "@@editor": [
