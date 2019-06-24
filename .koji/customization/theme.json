@@ -1,0 +1,48 @@
+{
+  "theme": {
+    "--font-family": "Nunito",
+    "--text-color": "#0F0F0F",
+    "--navbar-background-color": "#FFF",
+    "--footer-background-color": "#FFF",
+    "--background-image": "https://images.koji-cdn.com/d2a7a9d4-7373-4d11-8310-92a8d0394128/backgroundnew.jpg"
+  },
+  "@@editor": [
+    {
+      "key": "theme",
+      "name": "Theme settings",
+      "icon": "💅",
+      "source": "theme.json",
+      "fields": [
+        {
+          "key": "--font-family",
+          "name": "Font Family",
+          "description": "Google font NAME to use on page"
+        },
+        {
+          "key": "--text-color",
+          "name": "Text Color",
+          "description": "Color for text content (not links)",
+          "type": "color"
+        },
+        {
+          "key": "--navbar-background-color",
+          "name": "Navbar background color",
+          "description": "Navbar background color",
+          "type": "color"
+        },
+        {
+          "key": "--footer-background-color",
+          "name": "Footer background color",
+          "description": "Footer background color",
+          "type": "color"
+        },
+        {
+          "key": "--background-image",
+          "name": "Background Image",
+          "description": "URL of Image to place as background",
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
