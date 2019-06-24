@@ -1,8 +1,9 @@
 {
   "general": {
     "name": "My new App using Angular 8 + TypeScript",
-    "fontFamily": "https://fonts.googleapis.com/css?family=Nunito",
-    "backgroundImage": "https://images.koji-cdn.com/d2a7a9d4-7373-4d11-8310-92a8d0394128/background.jpg?fit=cover"
+    "--font-family": "Nunito",
+    "--background": "https://images.koji-cdn.com/d2a7a9d4-7373-4d11-8310-92a8d0394128/background.jpg",
+    "--text-color": "#0F0F0F"
   },
   "@@editor": [
     {
@@ -16,18 +17,21 @@
           "name": "App name"
         },
         {
-          "key": "fontFamily",
+          "key": "--font-family",
           "name": "Font Family",
-          "description": "Google fonts link to font to use on page"
+          "description": "Google font NAME to use on page"
         },
         {
-          "key": "backgroundImage",
+          "key": "--text-color",
+          "name": "Text Color",
+          "description": "Color for text content (not links)",
+          "type": "color"
+        },
+        {
+          "key": "--background",
           "name": "Background Image",
           "description": "URL of Image to place as background",
-          "type": "image",
-          "typeOptions": {
-            "fit": "cover"
-          }
+          "type": "image"
         }
       ]
     }
