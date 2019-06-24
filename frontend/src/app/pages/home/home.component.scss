@@ -19,10 +19,15 @@
       max-width: 250px;
     }
 
+    &-links-title {
+      margin-bottom: 0;
+    }
+
     &-links {
       list-style: none;
       margin: 0;
       padding: 0;
+      text-align: center;
     }
   }
 }
