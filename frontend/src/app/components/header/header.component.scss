@@ -1,4 +1,6 @@
 :host {
+  background: var(--navbar-background-color, #fff);
+
   .header {
     align-items: center;
     box-shadow: 0px 13px 5px -11px rgba(0, 0, 0, 0.14);

@@ -1,6 +1,6 @@
 
 :host {
-  background: var(--background);
+  background: var(--background-image, url("/assets/images/background.jpg"));
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;

@@ -1,4 +1,6 @@
 :host {
+  background: var(--footer-background-color, #fff);
+  color: var(--text-color, #fff);
   margin-top: auto;
 
   .footer {
