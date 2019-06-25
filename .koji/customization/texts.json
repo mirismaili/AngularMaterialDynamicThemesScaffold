@@ -17,7 +17,7 @@
   "@@editor": [
     {
       "key": "texts",
-      "name": "App settings",
+      "name": "Texts",
       "icon": "📝",
       "source": "texts.json",
       "fields": [
