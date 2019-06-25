@@ -1,0 +1,92 @@
+{
+  "texts": {
+    "header_text_tab_home": "Home",
+    "header_text_tab_sample": "Sample",
+    "header_text_tab_notfound": "404",
+    "footer_text": "Angular 8 + TypeScript Scaffold 2019",
+    "home_text_help": "Some links to help you start:",
+    "home_text_help_links_1": "Tour of Heroes",
+    "home_text_help_links_2": "CLI Documentation",
+    "home_text_help_links_3": "Angular blog",
+    "home_text_help_links_4": "TypeScript Documentation",
+    "sample_text_button": "Get a message from the API",
+    "notfound_text_1": "😯 Ooops!",
+    "notfound_text_2": "It seems that this page isn't here",
+    "notfound_text_link": "Go back"
+  },
+  "@@editor": [
+    {
+      "key": "texts",
+      "name": "App settings",
+      "icon": "📝",
+      "source": "texts.json",
+      "fields": [
+        {
+          "key": "header_text_tab_home",
+          "name": "Tab",
+          "description": "Text of the tab related to the Home page"
+        },
+        {
+          "key": "header_text_tab_sample",
+          "name": "Tab",
+          "description": "Text of the tab related to the Sample page"
+        },
+        {
+          "key": "header_text_tab_notfound",
+          "name": "Tab",
+          "description": "Text of the tab related to the Not Found page"
+        },
+        {
+          "key": "footer_text",
+          "name": "Text",
+          "description": "Text to show at footer"
+        },
+        {
+          "key": "home_text_help",
+          "name": "Text",
+          "description": "Text for the links list"
+        },
+        {
+          "key": "home_text_help_links_1",
+          "name": "Link",
+          "description": "Text of the link"
+        },
+        {
+          "key": "home_text_help_links_2",
+          "name": "Link",
+          "description": "Text of the link"
+        },
+        {
+          "key": "home_text_help_links_3",
+          "name": "Link",
+          "description": "Text of the link"
+        },
+        {
+          "key": "home_text_help_links_4",
+          "name": "Link",
+          "description": "Text of the link"
+        },
+        {
+          "key": "sample_text_button",
+          "name": "Button",
+          "description": "Text of the button"
+        },
+        {
+          "key": "notfound_text_1",
+          "name": "Text",
+          "description": "Text of the button"
+        },
+        {
+          "key": "notfound_text_2",
+          "name": "Text",
+          "description": "Text of the button"
+        },
+        {
+          "key": "notfound_text_link",
+          "name": "Link",
+          "description": "Text of the link"
+        }
+      ]
+    }
+  ]
+}
