@@ -18,7 +18,7 @@ const routes: Routes = [
   {
     path: '**',
     loadChildren: () => import('./pages/notfound/notfound.module').then(({ NotfoundModule }) => NotfoundModule),
-    data: { path: '/', pathName: 'Go back' }
+    data: { path: '/' }
   }
 ];
 

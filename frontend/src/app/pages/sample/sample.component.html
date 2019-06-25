@@ -1,5 +1,5 @@
-<div class="sample">
+<div class="sample" *ngIf="content">
   <div class="sample-option">
-    <a href="javascript:void(0)" (click)="getMessageFromServer()">Get a message from Api</a>
-    <p class="sample-message">{{ message }}</p>
+    <a href="javascript:void(0)" (click)="getMessageFromApi()">{{ content?.sample_text_button }}</a>
+    <p class="sample-message">{{ message$ | async }}</p>
 </div>

@@ -1,19 +1,27 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="main">
+<div class="main" *ngIf="content">
   <img class="main-logo" alt="Angular 8 + TypeScript Scaffold Logo" src="assets/images/angular8-typescript-scaffold-logo.png">
-  <h2 class="main-links-title">Some links to help you start:</h2>
+  <h2 class="main-links-title">{{ content?.home_text_help }}</h2>
   <ul class="main-links">
     <li>
-      <h3><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h3>
+      <h3>
+        <a target="_blank" rel="noopener" title="{{ content?.home_text_help_links_1 }}" href="https://angular.io/tutorial">{{ content?.home_text_help_links_1 }}</a>
+      </h3>
     </li>
     <li>
-      <h3><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h3>
+      <h3>
+        <a target="_blank" rel="noopener" title="{{ content?.home_text_help_links_2 }}" href="https://angular.io/cli">{{ content?.home_text_help_links_2 }}</a>
+      </h3>
     </li>
     <li>
-      <h3><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h3>
+      <h3>
+        <a target="_blank" rel="noopener" title="{{ content?.home_text_help_links_3 }}" href="https://blog.angular.io/">{{ content?.home_text_help_links_3 }}</a>
+      </h3>
     </li>
     <li>
-      <h3><a target="_blank" rel="noopener" href="https://www.typescriptlang.org/docs/home.html">TypeScript Documentation</a></h3>
+      <h3>
+        <a target="_blank" rel="noopener" title="{{ content?.home_text_help_links_4 }}" href="https://www.typescriptlang.org/docs/home.html">{{ content?.home_text_help_links_4 }}</a>
+      </h3>
     </li>
   </ul>
 </div>

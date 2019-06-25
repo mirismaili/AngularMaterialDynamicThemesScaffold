@@ -4,5 +4,6 @@ export {
   IKojiConfigEditorField,
   IKojiConfigRoutes,
   IKojiConfigMetadata,
-  IKojiConfigPages
+  IKojiConfigPages,
+  IKojiConfigGeneric
 } from './koji.interface';

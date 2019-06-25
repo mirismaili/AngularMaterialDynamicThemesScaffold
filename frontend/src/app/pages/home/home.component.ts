@@ -6,7 +6,7 @@ import { APP } from '../../config';
 // services
 import { KojiService } from '../../services';
 // interfaces
-import { IKojiConfigMetadata } from '../../interfaces';
+import { IKojiConfigMetadata, IKojiConfigGeneric } from '../../interfaces';
 
 
 @Component({
@@ -15,6 +15,9 @@ import { IKojiConfigMetadata } from '../../interfaces';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  // texts content
+  content: IKojiConfigGeneric = {};
+
   constructor(
     private kojiService: KojiService,
     private titleService: Title,
@@ -30,6 +33,26 @@ export class HomeComponent implements OnInit {
     this.titleService.setTitle(this.kojiService.getEditor('metadata').name || APP.defaults.metatags.title);
     // sets page metatags
     this.setMetaTags(this.kojiService.getEditor('metadata'));
+    // sets page content
+    this.setTextContent(this.kojiService.getEditor('texts'));
+  }
+
+  /**
+   * Sets page texts content
+   * @param textContent IKojiConfigGeneric
+   */
+  private setTextContent(textContent: IKojiConfigGeneric): void {
+    const contentProps = Object.keys(textContent);
+
+    if (contentProps.length) {
+      // set every related text for the veiw management
+      contentProps.map((prop) => {
+        // filter for page
+        if (prop && prop.startsWith(APP.paths.home)) {
+          this.content[prop] = textContent[prop];
+        }
+      });
+    }
   }
 
   /**

@@ -79,6 +79,11 @@ export interface IKojiConfigRoutes {
   [key: string]: any;
 }
 
+// generic
+export interface IKojiConfigGeneric {
+  [key: string]: any;
+}
+
 // koji config
 export interface IKojiConfig {
   ['@@editor']?: IKojiConfigEditor;
