@@ -1,7 +1,7 @@
 {
-  "name": "angular-scaffold",
-  "version": "1.0.0",
-  "description": "An Angular 8 IVY scaffold",
+  "name": "angular-material-app-with-dynamic-themes",
+  "version": "0.0.0",
+  "description": "An Angular app that can switch between material-themes at run-time",
   "scripts": {
     "ng": "ng",
     "prestart": "koji-tools watch &",
@@ -14,6 +14,35 @@
   "engines": {
     "node": ">=10.16 <= 12.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mirismaili/AngularMaterialDynamicThemesScaffold.git"
+  },
+  "keywords": [
+    "angular",
+    "angular-material",
+    "angular-material-theme",
+    "angular-material-themes",
+    "theme",
+    "themes",
+    "dynamic-theme",
+    "dynamic-themes",
+    "runtime-theme-change",
+    "runtime-change-themes",
+    "sass",
+    "scss",
+    "template",
+    "scaffold",
+    "starter",
+    "starter-kit",
+    "koji"
+  ],
+  "author": "S. M. Mir-Ismaili <s.m.mirismaili@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mirismaili/AngularMaterialDynamicThemesScaffold/issues"
+  },
+  "homepage": "https://github.com/mirismaili/AngularMaterialDynamicThemesScaffold#readme",
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.1.3",
