@@ -1,12 +1,10 @@
-// core
-import {Component, HostBinding} from '@angular/core';
-import {RouterOutlet, ActivatedRoute} from '@angular/router';
+import {Component, HostBinding} from '@angular/core'
 import {OverlayContainer} from '@angular/cdk/overlay'
+import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout'
+import {Observable} from 'rxjs'
+import {map} from 'rxjs/operators'
 
-// packages
-import Koji from 'koji-tools';
-// animations
-import {routeAnimations} from './animations';
+import Koji from 'koji-tools'
 
 const THEME_DARKNESS_SUFFIX = `-dark`
 
@@ -14,15 +12,34 @@ const THEME_DARKNESS_SUFFIX = `-dark`
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  animations: [routeAnimations]
 })
 export class AppComponent {
+  title = 'AngularMaterialDynamicThemes'
+  
   @HostBinding('class') activeThemeCssClass: string
   isThemeDark = false
   activeTheme: string
+  themes: string[] = [
+    'deeppurple-amber',
+    'indigo-pink',
+    'pink-bluegrey',
+    'purple-green',
+  ]
   
-  constructor(private overlayContainer: OverlayContainer) {
-    Koji.pageLoad();
+  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol']
+  dataSource = ELEMENT_DATA
+  
+  // For navigation (sidenav/toolbar). Isn't related to dynamic-theme-switching:
+  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
+    map(result => result.matches)
+  )
+  
+  // `breakpointObserver` is for navigation (sidenav/toolbar). Isn't related to dynamic-theme-switching:
+  constructor(
+    private breakpointObserver: BreakpointObserver,
+    private overlayContainer: OverlayContainer,
+  ) {
+    Koji.pageLoad()
     
     // Set default theme here:
     this.setActiveTheme('deeppurple-amber', /* darkness: */ false)
@@ -49,12 +66,20 @@ export class AppComponent {
     this.activeThemeCssClass = cssClass
   }
   
-  /**
-   * Returns the the current active route to control the animation to apply
-   * @param outlet: RouterOutlet
-   * @returns: ActivatedRoute
-   */
-  prepareRoute(outlet: RouterOutlet): ActivatedRoute {
-    return outlet && outlet.isActivated && outlet.activatedRoute;
+  toggleDarkness() {
+    this.setActiveTheme(this.activeTheme, !this.isThemeDark)
   }
 }
+
+export interface PeriodicElement {
+  name: string
+  position: number
+  weight: number
+  symbol: string
+}
+
+const ELEMENT_DATA: PeriodicElement[] = [
+  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
+  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
+  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
+]
