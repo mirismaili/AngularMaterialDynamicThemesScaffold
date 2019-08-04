@@ -3,7 +3,6 @@ import {OverlayContainer} from '@angular/cdk/overlay'
 import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout'
 import {Observable} from 'rxjs'
 import {map} from 'rxjs/operators'
-
 import Koji from 'koji-tools'
 
 const THEME_DARKNESS_SUFFIX = `-dark`
@@ -19,12 +18,7 @@ export class AppComponent {
   @HostBinding('class') activeThemeCssClass: string
   isThemeDark = false
   activeTheme: string
-  themes: string[] = [
-    'deeppurple-amber',
-    'indigo-pink',
-    'pink-bluegrey',
-    'purple-green',
-  ]
+  themes = DEFINED_THEMES
   
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol']
   dataSource = ELEMENT_DATA
