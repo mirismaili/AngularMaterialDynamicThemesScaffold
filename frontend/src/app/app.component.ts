@@ -4,6 +4,7 @@ import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout'
 import {Observable} from 'rxjs'
 import {map} from 'rxjs/operators'
 import Koji from 'koji-tools'
+import {KojiService} from './services'
 
 const THEME_DARKNESS_SUFFIX = `-dark`
 
@@ -13,8 +14,7 @@ const THEME_DARKNESS_SUFFIX = `-dark`
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'AngularMaterialDynamicThemes'
-  
+  title
   @HostBinding('class') activeThemeCssClass: string
   isThemeDark = false
   activeTheme: string
@@ -32,8 +32,11 @@ export class AppComponent {
   constructor(
     private breakpointObserver: BreakpointObserver,
     private overlayContainer: OverlayContainer,
+    private kojiService: KojiService,
   ) {
     Koji.pageLoad()
+    console.log(kojiService.getEditor('texts'))
+    this.title = kojiService.getEditor('texts').title
     
     // Set default theme here:
     this.setActiveTheme('deeppurple-amber', /* darkness: */ false)

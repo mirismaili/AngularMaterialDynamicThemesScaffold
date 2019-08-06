@@ -3,7 +3,7 @@
     "header_text_tab_home": "Home",
     "header_text_tab_sample": "Sample",
     "header_text_tab_notfound": "404",
-    "footer_text": "Angular 8 + TypeScript Scaffold 2019",
+    "title": "Angular Material Themes",
     "home_text_help": "Some links to help you start:",
     "home_text_help_links_1": "Tour of Heroes",
     "home_text_help_links_2": "CLI Documentation",
@@ -37,9 +37,9 @@
           "description": "Text of the tab related to the Not Found page"
         },
         {
-          "key": "footer_text",
-          "name": "Text",
-          "description": "Text to show at footer"
+          "key": "title",
+          "name": "Title",
+          "description": "The title of the app"
         },
         {
           "key": "home_text_help",
